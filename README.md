@@ -1,6 +1,6 @@
 # Cyanobacteria Absorption Spectra: Analysis & Deconvolution
 
-An open-source Python library for analyzing and deconvoluting *in vivo* absorption spectra of cyanobacteria.
+An open-source Python library for analyzing and deconvoluting *in vivo* absorption spectra of cyanobacteria. 
 
 ## Problem: What do you want to exist that does not exist yet?
 
@@ -10,7 +10,7 @@ A whole-cell absorption spectrum is one of the fastest and cheapest measurements
 
 The intended end state is a standalone, pip-installable package (`pip install -e .`, MIT licensed) that a third party can call without knowing anything about the project — pure functions in, serializable dicts out, no I/O or global state inside the analysis layer. The result is designed to become a future module of the [cyano.tools](https://github.com/Zastupic/cyano-tools) platform (Department of Adaptive Biotechnologies, CzechGlobe); the web layer is out of scope for us, so everything that would make that handover a packaging job rather than a rewrite belongs in the library from day one.
 
-## Data: What goes in? Are you allowed to send it to a model?
+## Data: What goes in?
 
 **Input is tabular absorbance data**: the first column is wavelength, the remaining columns are samples. It arrives in two shapes, both handled by a parsing layer that is strictly separate from the analysis layer:
 
@@ -21,7 +21,7 @@ Parsed spectra are interpolated onto a common 1 nm grid and the wavelength range
 
 **This data is not sensitive.** It is optical density readings of cyanobacterial cultures, plus metadata such as strain name, light conditions, and timestamps. There is no personal data, no patient or human-subject information, and no proprietary or commercially confidential content. **It is safe to send to a model**, and it is safe to commit sample files to a public repository — which matters, because the reference library of pigment spectra and an example dataset are themselves deliverables of the project.
 
-## Correct means...: How will you know the output is right?
+## Correction:
 
 By benchmarking against synthetic ground truth that we generate ourselves.
 
@@ -36,7 +36,7 @@ We then measure how estimation error behaves as a function of **noise level**, *
 
 Ground truth also settles the project's main scientific question, which compares a model on the raw spectrum (PLS-DA, 1D-CNN) against a model on mechanistic features extracted by deconvolution: *does mechanistic feature extraction pay off, or can a network learn it directly?*
 
-## Plan: How are we going to build this?
+## Plan:
 
 ### Project Milestones
 
