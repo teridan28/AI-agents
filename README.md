@@ -2,7 +2,7 @@
 
 An open-source Python library for analyzing and deconvoluting *in vivo* absorption spectra of cyanobacteria. 
 
-![From a measured whole-cell spectrum, through deconvolution into individual pigment bands, to pigment ratios and culture-state interpretation](img/overview.svg)
+![From a measured whole-cell spectrum, through deconvolution into individual pigment bands, to pigment ratios and culture-state interpretation](overview.svg)
 
 *Figure 1. The idea behind the project. A measured whole-cell spectrum (1) is the sum of overlapping pigment bands, noise and light scattering. Deconvolution separates it into the contributions of individual pigments (2), from which quantitative, physiologically meaningful parameters can be derived (3). The spectra shown are synthetic and serve only as an illustration.*
 
