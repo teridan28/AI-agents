@@ -140,13 +140,7 @@ The same ground truth also addresses the central scientific question of the proj
 
 ## Installation
 
-The package is under development and is not yet published on PyPI. To install it from source:
-
-```bash
-git clone <repository-url>
-cd <repository-folder>
-pip install -e .
-```
+TBD
 
 ## Input data
 
