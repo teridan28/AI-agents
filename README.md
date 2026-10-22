@@ -226,4 +226,4 @@ This library is being developed as a future module of the [cyano.tools](https://
 
 ## License
 
-Released under the [MIT License](LICENSE).
+License to be determined.
