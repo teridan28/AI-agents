@@ -85,7 +85,7 @@ Two methods are implemented behind a common interface, so that they can be compa
 
 $$
 A(\lambda) = \sum_{i} h_i \exp\!\left(-\frac{(\lambda - c_i)^2}{2\sigma_i^2}\right),
-\qquad \text{FWHM}_i = 2\sqrt{2\ln 2}\,\sigma_i ,
+\qquad \text{FWHM}_i = 2\sqrt{2\ln 2}\sigma_i ,
 $$
 
 where $h_i$ is the height, $c_i$ the centre and $\sigma_i$ the width of band $i$. Bands are initialised at the known in vivo positions listed in the table above and fitted by bounded least squares. The centre of each band may move by at most ±5 nm and its width is constrained to a physically plausible range. These constraints prevent the fit from producing mathematically good but biologically meaningless solutions.
