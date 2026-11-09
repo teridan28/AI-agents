@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyanospectra"
+version = "0.1.0"
+description = "Analysis and deconvolution of in vivo absorption spectra of cyanobacteria"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "scipy>=1.9", "pandas>=1.5", "matplotlib>=3.6", "openpyxl>=3.0", "scikit-learn>=1.1"]
+
+[project.optional-dependencies]
+cnn = ["torch"]
+agent = ["anthropic"]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["cyanospectra"]
+
+[tool.setuptools.package-data]
+cyanospectra = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
